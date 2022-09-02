@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:opsz,wght@6..96,500&family=Boogaloo&family=Mochiy+Pop+P+One&family=Patua+One&family=Satisfy&display=swap');
+body {
+  margin: 0;
+  font-family: 'Satisfy', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Satisfy', cursive
+    monospace;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container{
+  max-width: 960px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.notes-list{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.note{
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+ white-space: pre-wrap;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+textarea{
+  border:none;
+  resize: none;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  border-radius: 10px;
+}
+.note.new{
+  background-color: aquamarine;
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color: rgb(233, 233, 233);
+  border:none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  border:solid 4px #327ffa;
+}
+.save:hover{
+  background-color: #327ffa;
+  cursor: pointer;
+}
+.delete-icon{
+  cursor: pointer;
+}
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 0.5em;
+  margin-bottom: 10px;
+  border:solid 4px #327ffa;
+}
+.search input{
+  border: none;
+  background-color: rgb(233, 233, 233);
+  
+}
+.search input:focus{
+  outline: none;
+}
+.dark-mode{
+  background-color: black;
+  min-height: 100vh;
+}
+.dark-mode h1{
+  color: white;
+}
+.reset-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ padding: 0px 8px;
+ gap: 10px;
+  background-color: #327ffa;
+  /* border: 2px solid gray; */
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
